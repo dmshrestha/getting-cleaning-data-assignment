@@ -49,4 +49,4 @@ by_activity_subject <- fulldataset %>% group_by(activity, subject)
 average_table <- by_activity_subject %>% summarise_each(funs(mean))
   
 #write to file
-write.table(average_table, file="out.txt", row.names= FALSE)
+write.table(average_table, file="tidy_data.txt", row.names= FALSE)
